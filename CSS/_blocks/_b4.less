@@ -1,0 +1,116 @@
+//main: ..//style.less
+.b4 {
+    padding: 90px 0;
+
+    .b4_wrapper {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            color: #2C605A;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "MuseoSansBold";
+        }
+
+        h3 {
+            margin: 30px 0;
+            color: #E7CB71;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .b4_start {
+            width: 700px;
+        }
+
+        .b4_list {
+            .b4_item {
+                display: flex;
+                margin-bottom: 25px;
+                align-items: center;
+
+                img {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .b4_end {
+            img {
+                width: 100%;
+            }
+        }
+
+        .b4_btn {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 30px 0;
+
+            .btn {
+                background: #2C605A;
+                padding: 10px 60px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1024px) {
+    .b4 {
+        .b4_wrapper {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width:966px) {
+    .b4 {
+        .b4_wrapper {
+            padding: 0;
+            flex-direction: column;
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        padding: 60px 0;
+        background-image: none;
+
+        .b4_wrapper {
+            width: 300px;
+            text-align: center;
+
+            h2 {
+                font-size: 19px;
+            }
+
+
+
+            .b4_start {
+                width: auto;
+            }
+
+            .b4_list {
+                .b4_item {
+                    flex-direction: column;
+
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

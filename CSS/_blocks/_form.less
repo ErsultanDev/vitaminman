@@ -1,0 +1,129 @@
+//main: ..//style.less
+.btn {
+    background-color: #E7CB71;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 44px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.form_desc {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #E7CB71;
+
+    span {
+        font-family: "MuseoSansBlack";
+        text-transform: uppercase;
+        font-size: 19px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+
+    input,
+    select {
+        border-radius: 44px;
+        border: 1px solid #E7CB71;
+        padding: 18px 30px;
+        font-size: 18px;
+        margin: 6px 0;
+        width: 350px;
+    }
+
+    .btn {
+        margin: 30px;
+    }
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 161px;
+    top: -87px;
+    padding: 10px 20px;
+    color: #fff;
+
+    .price_text {
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .newPrice {
+        font-size: 70px;
+        font-weight: 700;
+        font-family: "MuseoSansBlack";
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:966px) {
+    .price {
+        top: -65px;
+        left: 0px;
+
+        .newPrice {
+            font-size: 48px;
+        }
+
+        .price_text {
+            font-size: 20px;
+        }
+    }
+
+    .form_desc {
+        span {
+            font-size: 15px;
+        }
+    }
+
+    .form {
+        width: 300px;
+        margin: 0 auto;
+        input,
+
+        select {
+            width: 300px;
+            margin: 10 px auto;
+        }
+    }
+
+}
+
+@media (max-width:425px) {
+    .container {
+        padding: 0;
+    }
+}
+
+@media screen and(max-width:375px) {
+    .form {
+        .btn {
+            max-width: 280px;
+        }
+    }
+}

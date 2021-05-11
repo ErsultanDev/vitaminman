@@ -1,0 +1,71 @@
+//main: ..//style.less
+
+.b5 {
+    background: #32555B;
+    padding: 90px 0;
+    text-align: center;
+    color: #fff;
+    font-family: "MuseoSansLight";
+
+    .b5_desc {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        color: #FCEE94;
+        font-size: 24px;
+        margin-bottom: 30px;
+        font-family: "MuseoSansBlack";
+        text-transform: uppercase;
+
+    }
+
+    .b5_wrapper {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .b5 {
+        .b5_wrapper {
+            flex-direction: column;
+
+            .b5_card {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b5 {
+        .b5_desc {
+            width: 300px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
+    }
+}
+
+@media (max-width:320px) {
+    .b5 {
+        img {
+            width: 100%;
+        }
+
+        .b5_wrapper {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+
+    }
+}
